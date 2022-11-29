@@ -16,7 +16,7 @@ def add_to_hand(hand_var, sum_var, ace_var, turned_ace):
     sum_var = sum_var + temp #add the new card to the sum
     #print("Sum_var: ", sum_var)
     if(sum_var < 21): #if you have an ace, check if it burns you, if it is 11 instead of 1. If not, add 10 to the sum
-        if(ace_var > 0 and sum_var + 10 < 21):
+        if(ace_var > 0 and sum_var + 10 <= 21):
             sum_var = sum_var + 10
             turned_ace = True
 
