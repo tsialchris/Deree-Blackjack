@@ -166,8 +166,8 @@ while(cont == "y"):
             elif(player_sum > dealer_sum):  #if the player has a bigger sum, they win
                 print("You win the bet!")
                 money = money + bet
-    print("Money left: " + money)
-    print("Cards left: " + len(total_deck))
+    print("Money left: " , money)
+    print("Cards left: " , len(total_deck))
     print()
     cont = str(input("Do you want to continue? [y = yes/n = no] "))
     print()
